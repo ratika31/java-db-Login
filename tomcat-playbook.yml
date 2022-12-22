@@ -1,0 +1,12 @@
+---
+- name: "play book to install tomcat in server"
+  hosts: webservers
+  become: yes
+  tasks:
+  - name: "list of packages installed"
+    yum:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - wget
+      - git
