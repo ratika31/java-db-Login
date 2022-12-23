@@ -10,3 +10,14 @@
       packages:
       - wget
       - git
+      - java
+      
+  - name: "download tomcat"
+    get_url:
+      url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.tar.gz
+      dest: /etc
+      mode: '0755'
+  - name: Extract tar 
+    unarchive:
+      src: apache-tomcat-8.5.84.tar.gz 
+      dest: /etc 
