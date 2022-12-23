@@ -21,3 +21,4 @@
     unarchive:
       src: apache-tomcat-8.5.84.tar.gz 
       dest: /etc 
+      remote_src: yes
