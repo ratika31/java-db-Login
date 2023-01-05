@@ -31,7 +31,7 @@
   </dependencies>
 
   <build>
-<<<<<<< HEAD
+
           <finalName>${project.artifactId}##${project.version}</finalName>
 
                 <plugins>
@@ -57,7 +57,7 @@
                 </resources>
 
 
-=======
+
     <finalName>LoginRegisterApp</finalName>
   <!--</build> -->
   <!--<build> -->
@@ -71,6 +71,6 @@
         </configuration>
    </plugin>
    </plugins>
->>>>>>> 1667034f075fac8827950b490c433dcef37c804f
+
   </build>
 </project>
