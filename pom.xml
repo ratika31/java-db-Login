@@ -8,6 +8,10 @@
   <version>1.0</version>
   <name>LoginRegisterApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+   <maven.compiler.source>6</maven.compiler.source>
+   <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
