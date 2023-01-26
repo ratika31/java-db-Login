@@ -2,12 +2,10 @@
 - name: Play 1 - Run Roles for misl softwares,Apache & Tomcat
   hosts: webservers
   become: yes
-  vars:
-    v_role_path: "{{ WORKSPACE }}/roles"
   roles:
-    - "{{ v_role_path }}/misl"
-    - "{{ v_role_path }}/apache"
-    - "{{ v_role_path }}/tomcat"
+    - /var/lib/jenkins/workspace/ansible-project-aws-configure/roles/misl
+    - /var/lib/jenkins/workspace/ansible-project-aws-configure/roles/apache
+    - /var/lib/jenkins/workspace/ansible-project-aws-configure/roles/tomcat
 
 - name: Play 2 - Custom configuration of Apache
   hosts: webservers
