@@ -1,14 +1,14 @@
 
-- name: Unarchive a tomcat tar from tomcat website
+- name: "download tomcat"
+  get_url:
+    url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.tar.gz
+    dest: /etc
+    mode: '0755'
+- name: Extract tar 
   unarchive:
-    src: https://dlcdn.apache.org/tomcat/tomcat-8/v{{ tomcatVersion }}/bin/apache-tomcat-{{ tomcatVersion }}.tar.gz
-    dest: /etc/
+    src: apache-tomcat-8.5.84.tar.gz 
+    dest: /etc 
     remote_src: yes
-    owner: root
-    group: root
-    mode: 0755
-  tags:
-    - tar-copy
 
 - name: create a soft link to th tomcat folder
   file:
